@@ -1,1 +1,15 @@
-<p>search works!</p>
+<div class="row">
+    <div class="col-8">
+        <h1>Buscar películas: <small class="text-capitalize">{{text}}</small></h1>
+    </div>
+    <div class="col-4 text-right">
+        <h3>Mostrando {{movies.length}} resultados.</h3>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col">
+        <app-movies-poster-grid *ngIf="movies.length>0" [movies]="movies"></app-movies-poster-grid>
+    </div>
+</div>
