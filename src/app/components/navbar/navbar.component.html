@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-sm bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" routerLink="/home" >PelisApp</a>
+        <div class="d-flex" role="search">
+          <input #txtSearch
+           class="form-control me-2"
+           type="search"
+           (keyup.enter)="searchMovie(txtSearch.value)"
+           placeholder="Buscar pelicula" 
+           aria-label="Search">
+          <button 
+          (click)="searchMovie(txtSearch.value)"
+          class="btn btn-outline-success" 
+          type="submit">Search</button>
+        </div>
+      </div>
+  </nav>
